@@ -17,6 +17,10 @@ class CreateCompaniesTable extends Migration
             $table->id();
             $table->string('name')->unique();
             $table->text('description')->nullable();
+            $table->string('phone', 15)->unique()->nullable();
+            $table->string('email', 64)->unique()->nullable();
+            $table->string('tin')->unique()->nullable();
+            $table->string('iec')->unique()->nullable();
             $table->string('logo')->nullable();
             $table->timestamps();
         });
