@@ -15,6 +15,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property int $salary_from
  * @property int $salary_to
  * @property Carbon $archived_at
+ * @property-read int $currency_id
  * @property-read Carbon $created_at
  * @property-read Carbon $updated_at
  */
@@ -28,4 +29,9 @@ class Vacancy extends Model
         'salary_from' => 'int',
         'salary_to' => 'int'
     ];
+
+    public function currency()
+    {
+        return $this->belongsTo(Currency::class);
+    }
 }

@@ -20,7 +20,12 @@ class CreateVacanciesTable extends Migration
             $table->integer('salary_from')->nullable();
             $table->integer('salary_to')->nullable();
             $table->timestamp('archived_at')->nullable();
+            $table->unsignedSmallInteger('currency_id')->nullable();
             $table->timestamps();
+
+            $table->foreign('currency_id')
+                ->references('id')
+                ->on('currency');
         });
     }
 
