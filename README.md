@@ -10,7 +10,7 @@ Repository for managing company vacancies. Ability to create vacancies, manage t
 - docker-compose
 - php >= 7.2
 
-# Installation
+## Installation
 
 ```bash
 $ git clone git@github.com:crysecurity/jobs.git
