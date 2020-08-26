@@ -7,17 +7,17 @@ class CurrencySeeder extends Seeder
 {
     private $currency = [
         [
-            'name' => 'Рубль',
+            'name' => 'ruble',
             'code' => 'RUB',
             'symbol' => '₽'
         ],
         [
-            'name' => 'Доллар',
+            'name' => 'dollar',
             'code' => 'USD',
             'symbol' => '$'
         ],
         [
-            'name' => 'Евро',
+            'name' => 'euro',
             'code' => 'EUR',
             'symbol' => '€'
         ]
